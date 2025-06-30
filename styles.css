@@ -147,14 +147,16 @@ nav a:focus {
         padding: 0.5rem 0;
     }
     .hamburger {
-        display: flex;
+        display: flex !important;
+        /* Always show hamburger on mobile */
         position: absolute;
         top: 10px;
         right: 10px;
+        z-index: 101;
     }
     nav a {
         display: none !important;
-        /* Hide all links by default */
+        /* Hide links by default */
         width: 100%;
         padding: 1rem 2rem;
         border-radius: 0;
@@ -437,14 +439,16 @@ footer {
         padding: 0.5rem 0;
     }
     .hamburger {
-        display: flex;
+        display: flex !important;
+        /* Always show hamburger on mobile */
         position: absolute;
         top: 10px;
         right: 10px;
+        z-index: 101;
     }
     nav a {
         display: none !important;
-        /* Hide all links by default */
+        /* Hide links by default */
         width: 100%;
         padding: 1rem 2rem;
         border-radius: 0;
