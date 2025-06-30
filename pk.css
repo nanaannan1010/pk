@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffe7d9, #ffffff);
+    color: #2c3e50;
+}
+
+header {
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid #ff506c;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    background: #34495e;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #ff758c;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #ff506c;
+    color: white;
+    border-radius: 20px;
+}
+
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.image-slider img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.image-slider img:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    background: #ffffff;
+    border: 2px solid #ff758c;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    transition: box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #ff506c;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The PERICLES Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to The PERICLES Hotel</h1>
+        <div class="image-slider">
+            <img src="images/pi.png" alt="Hotel Image 1">
+            <img src="images/A (9).webp" alt="Hotel Image 2">
+            <img src="images/pp.JPG" alt="Hotel Image 3">
+        </div>
+        <p>Experience luxury and comfort like never before.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#rooms">Rooms & Suites</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking">Booking</a>
+        <a href="#garage">Garage</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="container" id="home">
+        <div class="image-slider">
+            <img src="images/download (1).jpg" alt="Hotel Image 1">
+            <img src="images/download (2).jpg" alt="Hotel Image 2">
+            <img src="images/download (3).jpg" alt="Hotel Image 3">
+            <img src="images/download (4).jpg" alt="Hotel Image 4">
+            <img src="images/download (5).jpg" alt="Hotel Image 5">
+            <img src="images/download (6).jpg" alt="Hotel Image 6">
+        </div>
+        <p>Welcome to our five-star hotel, where luxury meets comfort. Explore our world-class services and enjoy your stay.</p>
+    </div>
+
+    <div class="container" id="rooms">
+        <h2>Rooms & Suites</h2>
+        <div class="card">
+            <h3>Deluxe Room</h3>
+            <ol class="policy-info">
+                <li>Free breakfast</li>
+                <li>¢4,275 per night, 1 room</li>
+                <li>Inclusive of taxes and charges</li>
+                <button class="book-button">Visit Site</button>
+            </ol>
+        </div>
+        <!-- Additional room cards can be added here -->
+    </div>
+
+    <div class="container" id="amenities">
+        <h2>Amenities</h2>
+        <p>Enjoy our world-class amenities including a swimming pool, spa, gym, and gourmet restaurants.</p>
+        <ul>
+            <li>Infinity Pool</li>
+            <li>Fully Equipped Fitness Center</li>
+            <li>Luxury Spa Treatments</li>
+            <li>Private Cabanas</li>
+            <li>Kids' Play Area</li>
+        </ul>
+    </div>
+
+    <div class="container" id="gallery">
+        <h2>Gallery</h2>
+        <div class="image-slider">
+            <img src="images/A (1).jpeg" alt="Gallery Image 1">
+            <img src="images/A (1).webp" alt="Gallery Image 2">
+            <img src="images/A (7).webp" alt="Gallery Image 3">
+            <img src="images/A (3).webp" alt="Gallery Image 4">
+            <img src="images/A (4).webp" alt="Gallery Image 5">
+            <img src="images/A (5).webp" alt="Gallery Image 6">
+            <img src="images/A (8).webp" alt="Gallery Image 7">
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>Our hotel has been serving guests with exceptional hospitality for over a decade. Located in the heart of the city, we are the perfect choice for travelers.</p>
+        <p>With a mission to provide unparalleled luxury and comfort, our hotel is equipped with state-of-the-art facilities and a dedicated team of professionals ready to make your stay memorable.</p>
+    </div>
+
+    <div class="container" id="booking">
+        <h2>Booking</h2>
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+                <label for="checkout">Check-out Date</label>
+                <input type="date" id="checkout" name="checkout" required>
+            </div>
+            <div class="form-group">
+                <label for="adults">Number of Adults</label>
+                <select id="adults" name="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5+</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="children">Number of Children</label>
+                <select id="children" name="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="room">Room Type</label>
+                <select id="room" name="room">
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Executive Suite</option>
+                    <option value="presidential">Presidential Suite</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" name="requests" placeholder="Enter any special requests"></textarea>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <div class="container" id="garage">
+        <h2>Garage</h2>
+        <div class="image-slider">
+            <img src="images/car (1).JPG" alt="Car Image 1">
+            <img src="images/car (2).JPG" alt="Car Image 2">
+            <img src="images/car (3).JPG" alt="Car Image 3">
+            <img src="images/car (4).JPG" alt="Car Image 4">
+            <img src="images/car (5).jpg" alt="Car Image 5">
+            <img src="images/car (6).jpg" alt="Car Image 6">
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Reach out to us via:</p>
+        <ul>
+            <li>Email: <a href="mailto:nanaannan1010@gmail.com">nanaannan1010@gmail.com</a></li>
+            <li>Phone: <a href="tel:+233559274573">+233 (0)559274573</a></li>
+            <li>Address: 123 Luxury Gold, Pericles City, Ghana</li>
+        </ul>
+        <p>Follow us on social media for the latest updates and offers:</p>
+        <ul>
+            <li><a href="#">Facebook: Nana Annan</a></li>
+            <li><a href="#">Snapchat: nanapericles23</a></li>
+            <li><a href="#">WhatsApp: +233 559274573</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The PERICLES Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
