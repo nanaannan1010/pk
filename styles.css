@@ -148,7 +148,6 @@ nav a:focus {
     }
     .hamburger {
         display: flex !important;
-        /* Always show hamburger on mobile */
         position: absolute;
         top: 10px;
         right: 10px;
@@ -165,7 +164,7 @@ nav a:focus {
         border-bottom: 1px solid #e0e7ef;
     }
     nav.open a {
-        display: block !important;
+        display: block;
         /* Show links when nav has .open */
     }
 }
@@ -440,7 +439,6 @@ footer {
     }
     .hamburger {
         display: flex !important;
-        /* Always show hamburger on mobile */
         position: absolute;
         top: 10px;
         right: 10px;
@@ -457,7 +455,7 @@ footer {
         border-bottom: 1px solid #e0e7ef;
     }
     nav.open a {
-        display: block !important;
+        display: block;
         /* Show links when nav has .open */
     }
 }
