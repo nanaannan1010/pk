@@ -56,3 +56,14 @@ if (bookingForm)
             alert("Your booking request has been successfully submitted!");
         }
     });
+
+// Hamburger menu toggle
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    if (hamburger && nav) {
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+    }
+});
