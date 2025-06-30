@@ -153,7 +153,8 @@ nav a:focus {
         right: 10px;
     }
     nav a {
-        display: none;
+        display: none !important;
+        /* Hide all links by default */
         width: 100%;
         padding: 1rem 2rem;
         border-radius: 0;
@@ -162,7 +163,8 @@ nav a:focus {
         border-bottom: 1px solid #e0e7ef;
     }
     nav.open a {
-        display: block;
+        display: block !important;
+        /* Show links when nav has .open */
     }
 }
 
@@ -441,7 +443,8 @@ footer {
         right: 10px;
     }
     nav a {
-        display: none;
+        display: none !important;
+        /* Hide all links by default */
         width: 100%;
         padding: 1rem 2rem;
         border-radius: 0;
@@ -450,7 +453,8 @@ footer {
         border-bottom: 1px solid #e0e7ef;
     }
     nav.open a {
-        display: block;
+        display: block !important;
+        /* Show links when nav has .open */
     }
 }
 
