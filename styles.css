@@ -49,11 +49,13 @@ header p {
 }
 
 header.hero {
+    margin-top: 0;
+    /* Remove border-radius at top for seamless look */
+    border-radius: 0 0 2rem 2rem;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('images/pi.png') center/cover no-repeat;
     color: #fff;
     padding: 4rem 0 2rem 0;
     text-align: center;
-    border-radius: 0 0 2rem 2rem;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
@@ -74,16 +76,21 @@ header.hero {
 
 /* Navigation */
 
+
+/* NAVIGATION - place above hero, full width, sticky */
+
 nav {
+    width: 100vw;
+    left: 0;
+    top: 0;
+    position: sticky;
     background: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     display: flex;
     justify-content: center;
     gap: 2rem;
     padding: 1.2rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 nav a {
@@ -135,7 +142,8 @@ nav a:focus {
     nav {
         flex-direction: column;
         align-items: flex-start;
-        position: relative;
+        position: sticky;
+        top: 0;
         padding: 0.5rem 0;
     }
     .hamburger {
@@ -412,15 +420,41 @@ footer {
     .rooms-grid {
         gap: 1rem;
     }
+    nav {
+        gap: 1rem;
+        padding: 0.7rem 0;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: sticky;
+        top: 0;
+        padding: 0.5rem 0;
+    }
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    nav a {
+        display: none;
+        width: 100%;
+        padding: 1rem 2rem;
+        border-radius: 0;
+        background: #fff;
+        color: #0077b6;
+        border-bottom: 1px solid #e0e7ef;
+    }
+    nav.open a {
+        display: block;
+    }
 }
 
 @media (max-width: 600px) {
-    nav {
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        font-size: 0.95rem;
-        padding: 0.7rem 0;
-    }
     .hero-content h1 {
         font-size: 1.4rem;
     }
